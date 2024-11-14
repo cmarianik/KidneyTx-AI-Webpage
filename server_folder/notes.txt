@@ -1,0 +1,79 @@
+* several python scripts were moved to pathology_image_UNOS/scripts, if this causes issues.
+
+
+----------------------- FOR TESTING -----------------------------------------------
+
+Simulate pipeline initiation:
+mkdir Sls7XbGdDde01FHjTRdFvMZaBQu1_newpipeline
+Simulate pipeline termination:
+cp -a ensemble_pipeline_test_run009/. Sls7XbGdDde01FHjTRdFvMZaBQu1_newpipeline/
+
+
+
+-----------------------------------  T O  -  D O  --------------------------------------
+
+-donor id added to input, to be included with sql for
+   -doctor should be able to recognize from job_list who it's for
+   -date and time it
+
+HISTOGRAM RELATED:
+   -y axis percentage based for the first histogram
+
+to download nvm: curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
+nvm install v16.20.2
+zhengzi is on: node 14.17.6
+and a slightly earlier nvm.
+NONSKIP: time to upload 3 files: 2:20 for upload to server, 31:30 for finish email.
+SKIP: time to upload 3 files: 1:55 for upload to server, 30:10 for finish email.
+
+
+
+
+
+
+place all of results into structured pdf file report (email it probably)
+   -html to pdf?
+
+
+
+
+
+check for number of jobs running on the server.
+3 jobs consecutively is okay, after that enqueue.
+
+
+-allow users to access past submissions stored up to 60 days
+
+
+----------------------------------------------------------------------------
+
+Sls7XbGdDde01FHjTRdFvMZaBQu1: 124234
+
+
+
+cd /mnt/UserData1/mariac06/pathology_image_UNOS
+
+
+
+ps -elf | grep python
+nvidia-smi
+
+for non-scanner, add to end of docker command:
+-sca"n"
+
+email: testkidneyreact@gmail.com
+pw: kidney123
+App Pw: wybj nvax ymhj ugao
+   (this is used to allow connection w/o 2FA)
+
+
+multi-file missing single-file support
+ (like uploading a file with all params)
+multi-file upload visually ugly; doesn't reset on form submit
+ (because refresh disabled. fix later)
+
+
+Some python scripts (currently only img_compress) must be ran in a docker container to support libraries (pillow):
+   Do: docker exec -u 1007 -w /work/pathology_image_UNOS/ -it acaafc3cb5d9 /bin/bash
+   then: python
+to do step-by-step debugging.
